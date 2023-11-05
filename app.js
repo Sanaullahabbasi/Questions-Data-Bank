@@ -20,3 +20,14 @@ for(var i=0; i< value.length; i++){
 }
 console.log(obj)
 }
+
+var msg = "Read Intruction before proceed to read instruction"
+Swal.fire({
+    title: msg,
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
