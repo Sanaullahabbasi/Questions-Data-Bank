@@ -1,4 +1,22 @@
 #textArea{
 width: 700px;
 height: 450px;
+padding: 20px 30px;
+}
+
+#btn{
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+#btn:hover{
+    background-color: #fff;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: 1px solid blue;
 }
