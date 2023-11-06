@@ -24,10 +24,7 @@ function upload() {
       }
     }
   }
-  console.log(questions);
-}
-
-var msg =
+  var msg =
   "Rules: place question mark at the end or every question, enter a space after complete typing the questions and also place enter after the last question in your data bank";
 Swal.fire({
   title: msg,
@@ -38,6 +35,9 @@ Swal.fire({
     popup: "animate__animated animate__fadeOutUp",
   },
 });
+}
+
+
 
 var userData = [];
 function formRegister() {
@@ -101,7 +101,7 @@ console.log(userData)
  
     localStorage.setItem("userData", JSON.stringify(userData));
     setTimeout(() => {
-      window.location.href = "./blog.html";
+      window.location.href = "./index.html";
     }, 2000);
   }
   
@@ -120,7 +120,7 @@ function checkPassword() {
 }
 
 function redirect() {
-  window.location.href = "./index.html";
+  window.location.href = "./signup.html";
 }
 function logout() {
   setTimeout(redirect, 2000);
@@ -141,8 +141,15 @@ function login() {
     <p class="err">*password is wrong</p>`;
     } else {
       setTimeout(() => {
-        window.location.href = "./blog.html";
+        window.location.href = "./index.html";
       }, 2000);
     }
   }
 }
+
+function redirect() {
+    window.location.href = "./login.html";
+  }
+  function logout() {
+    setTimeout(redirect, 1000);
+  }
