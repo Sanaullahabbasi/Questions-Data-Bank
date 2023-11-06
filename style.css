@@ -12,7 +12,6 @@ width: 700px;
 height: 450px;
 padding: 20px 30px;
 border-radius: 10px;
-
 }
 
 #btn{
@@ -30,4 +29,13 @@ border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     border: 1px solid blue;
+}
+
+@media only screen and (max-width: 600px){
+    #textArea{
+        width: 400px;
+        height: 450px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        }
 }
