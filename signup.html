@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f6d3d555d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main1 p-4">
+      <div>
+        <form onsubmit="formRegister()">
+          <div class="header row"><h2>Registration Form</h2></div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                aria-describedby="emailHelp"
+                placeholder="First Name"
+              />
+              <div id="firstNameError"></div>
+            </div>
+            <div class="mb-3 col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                aria-describedby="emailHelp"
+                placeholder="Last Name"
+              />
+              <div id="lastNameError"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="User Name"
+              aria-describedby="emailHelp"
+            />
+            <i class="fa-solid fa-user place"></i>
+            <div id="userNameError"></div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
+            <i class="fa-solid fa-envelope place"></i>
+            <div id="emailError"></div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="number"
+              aria-describedby="emailHelp"
+              placeholder="Phone Number"
+            />
+            <i class="fa-solid fa-phone place"></i>
+            <div id="phoneError"></div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                aria-describedby="emailHelp"
+                placeholder="Password"
+              />
+              <i class="fa-solid fa-lock place1"></i>
+              <div id="passwordError"></div>
+            </div>
+            <div class="mb-3 col-md-6">
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                aria-describedby="emailHelp"
+                placeholder="Confirm Password"
+                onkeyup="checkPassword()"
+              />
+              <i class="fa-solid fa-lock place1"></i>
+              <div id="cPasswordError"></div>
+            </div>
+          </div>
+          <div class="btn-cen">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            Already have an account?<a href="login.html">login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
