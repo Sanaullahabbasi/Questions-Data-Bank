@@ -5,6 +5,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
 }
 
 #textArea{
@@ -12,6 +14,9 @@ width: 700px;
 height: 450px;
 padding: 20px 30px;
 border-radius: 10px;
+}
+.textArea{
+    position: relative;
 }
 
 #btn{
@@ -21,6 +26,9 @@ border-radius: 10px;
     border-radius: 10px;
     padding: 10px;
     border: none;
+    position: absolute;
+    bottom: 16px;
+    right: 10px;
 }
 
 #btn:hover{
@@ -29,6 +37,17 @@ border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     border: 1px solid blue;
+}
+.header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 2px 2px 2px 3px blue;
+    margin-bottom: 20px;
+    font-size: 25   px;
 }
 
 @media only screen and (max-width: 600px){
